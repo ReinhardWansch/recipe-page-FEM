@@ -1,7 +1,4 @@
-$slp-body-bg: rgb(20, 20, 20);
-$slp-card-bg: rgb(31, 31, 31);
-$slp-btn-bg: rgb(51, 51, 51);
-$slp-btn-hover-bg: rgb(175, 255, 13);
+
 
 /*###############*/
 /*## BOOTSTRAP ##*/
@@ -41,8 +38,6 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "slp-btn":    $slp-btn-bg,
-  "slp-card":   $slp-card-bg
 );
 
 $font-sizes: (
@@ -71,20 +66,3 @@ $font-sizes: (
 /*## STYLING ##*/
 /*#############*/
 
-#cardImg {
-    height: 5rem;
-    width: 5rem;
-}
-
-.btn-slp-btn:hover {
-    background-color: $slp-btn-hover-bg;
-    color: $slp-card-bg;
-}
-
-.card-subtitle {
-    color: $slp-btn-hover-bg;
-}
-
-.card-profession {
-    font-size: $font-size-base * 0.9;
-}
