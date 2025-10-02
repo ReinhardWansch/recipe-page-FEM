@@ -1,0 +1,38 @@
+/*############*/
+/*## FONTS ##*/
+/*############*/
+
+@font-face {
+    font-family: 'Inter';
+    /* src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype'); */
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/*#################*/
+/*## ATTRIBUTION ##*/
+/*#################*/
+
+.attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
