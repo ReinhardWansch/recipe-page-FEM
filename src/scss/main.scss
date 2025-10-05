@@ -115,6 +115,21 @@ ol li::marker {
   color: $brown;
 }
 
+#nutritionTable {
+  tbody {
+    tr {
+      border-bottom: 1px solid $stone150;
+    }
+    tr:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+
+
+
+
 .attribution {
   margin-top: $spacer * 4;
   text-align: center;

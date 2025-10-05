@@ -22,6 +22,9 @@ I will use Bootstrap and customize it with SCSS.
 
 ## What I learned
 
+- How to use the SASS-CLI
+- How to use npm-scripts
+- There is a pseudo-class called `:last-child`
 
 ## Useful resources
 
