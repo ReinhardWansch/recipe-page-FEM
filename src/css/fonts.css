@@ -34,18 +34,4 @@
     font-style: normal;
 }
 
-/*#################*/
-/*## ATTRIBUTION ##*/
-/*#################*/
 
-.attribution {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    font-size: 11px;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}

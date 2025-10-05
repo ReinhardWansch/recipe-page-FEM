@@ -27,6 +27,7 @@ $rose50: hsl(330, 100%, 98%);
 
 // Default variable overrides
 $font-family-sans-serif: 'Outfit', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$body-bg: $stone100;
 $body-color: $stone900;
 
 // Required
@@ -45,8 +46,8 @@ $h03-font-size: $font-size-base * 0.25;
 
 // Include any default map overrides here
 $theme-colors: (
-  "primary":    $brown,
-  "secondary":  $rose800,
+  "primary": $brown,
+  "secondary": $rose800,
   "secondary-light": $rose50,
 );
 
@@ -67,19 +68,59 @@ $font-sizes: (
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/utilities";
-@import "../../node_modules/bootstrap/scss/utilities/api"; 
+@import "../../node_modules/bootstrap/scss/utilities/api";
 
 
 /*####################*/
 /*## CUSTOM STYLING ##*/
 /*####################*/
 
-h1, h2, h3, h4, h5, h6 {
+$breakpoint-sm: 576px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'YoungSerif', serif;
   font-weight: 400;
+}
+
+#pageCtn {
+  background-color: white;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  #pageCtn {
+    max-width: 540px;
+    background-color: white;
+  }
+}
+
+#recipeImg {
+  width: 100%;
+  // border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  #recipeImg {
+    border-radius: 0;
+  }
 }
 
 ul li::marker,
 ol li::marker {
   color: $brown;
+}
+
+.attribution {
+  margin-top: $spacer * 4;
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
