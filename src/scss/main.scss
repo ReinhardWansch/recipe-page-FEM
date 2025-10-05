@@ -1,18 +1,33 @@
+/*##########*/
+/*## VARS ##*/
+/*##########*/
 
+$stone100: hsl(30, 54%, 90%);
+$stone150: hsl(30, 18%, 87%);
+$stone600: hsl(30, 10%, 34%);
+$stone900: hsl(24, 5%, 18%);
+
+$brown: hsl(14, 45%, 36%);
+
+$rose800: hsl(332, 51%, 32%);
+$rose50: hsl(330, 100%, 98%);
+
+/*###########*/
+/*## FONTS ##*/
+/*###########*/
+
+@import "/src/css/fonts.css";
 
 /*###############*/
 /*## BOOTSTRAP ##*/
 /*###############*/
 
-@import "../css/style.css";
-
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
 
 // Default variable overrides
-$body-bg: #000;
-$body-color: white;
-
+$font-family-sans-serif: 'Outfit', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$body-color: $stone900;
 
 // Required
 @import "../../node_modules/bootstrap/scss/variables";
@@ -30,14 +45,9 @@ $h03-font-size: $font-size-base * 0.25;
 
 // Include any default map overrides here
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
+  "primary":    $brown,
+  "secondary":  $rose800,
+  "secondary-light": $rose50,
 );
 
 $font-sizes: (
@@ -57,12 +67,19 @@ $font-sizes: (
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/utilities";
-@import "../../node_modules/bootstrap/scss/card";
-@import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/utilities/api"; 
 
 
-/*#############*/
-/*## STYLING ##*/
-/*#############*/
+/*####################*/
+/*## CUSTOM STYLING ##*/
+/*####################*/
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'YoungSerif', serif;
+  font-weight: 400;
+}
+
+ul li::marker,
+ol li::marker {
+  color: $brown;
+}
