@@ -100,15 +100,13 @@ h6 {
 
 #recipeImg {
   width: 100%;
-  // border-radius: 0.5rem;
   object-fit: cover;
-}
-
-@media screen and (min-width: $breakpoint-sm) {
-  #recipeImg {
-    border-radius: 0;
+  
+  @media screen and (min-width: $breakpoint-sm) {
+      border-radius: $border-radius-lg;
   }
 }
+
 
 ul li::marker,
 ol li::marker {
