@@ -8,7 +8,7 @@ I will use Bootstrap and customize it with SCSS.
 
 ## Screenshot
 
-![](./screenshot.jpg)
+![screenshot](/src/assets/images/screenshot.png)
 
 ## Links
 
